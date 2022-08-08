@@ -22,5 +22,7 @@ useHead({
 </script>
 
 <template>
+  <Navigation />
   <RouterView />
+  <Footer />
 </template>
