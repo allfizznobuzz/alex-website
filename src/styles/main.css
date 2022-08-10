@@ -8,9 +8,9 @@ body,
   padding: 0;
 }
 
-html.dark {
+html.white {
   background: #121212;
-  color-scheme: dark;
+  color-scheme: white;
 }
 
 #nprogress {
