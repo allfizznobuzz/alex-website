@@ -15,15 +15,22 @@ export default {
 </script>
 
 <template>
-  <div id="rightbox" bg-slate-800 class="py-2 hover:text-gray-400 hover:bg-slate-700 transition duration-300">
-    <router-link :to="to" class="py-2 pl-2 text-white" :class="{ active: isActive }">
+  <div bg-slate-800 class="container hover:text-gray-400 hover:bg-slate-700 transition duration-300 absolute">
+    <router-link :to="to" pl-10 text-white pr-auto :class="{ active: isActive }" class="button">
       <slot />
     </router-link>
   </div>
 </template>
 
 <style>
-#rightbox{
-  float:right;
-  width:25%;}
+.container {
+    float:right;
+    width:100%;
+}
+
+.button {
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
 </style>

@@ -49,8 +49,11 @@ export default {
         <!-- mobile button -->
         <div class="md:hidden flex items-center">
           <button @click="mobile = !mobile">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <svg v-if="!mobile" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg v-if="mobile" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
@@ -63,13 +66,13 @@ export default {
       <MobileLink to="#">
         Services
       </MobileLink>
-      <MobileLink to="#">
+      <MobileLink to="#" class="mt-10">
         Practice
       </MobileLink>
-      <MobileLink to="#">
+      <MobileLink to="#" class="mt-20">
         Area
       </MobileLink>
-      <MobileLink to="#">
+      <MobileLink to="#" class="mt-30">
         About
       </MobileLink>
     </div>
